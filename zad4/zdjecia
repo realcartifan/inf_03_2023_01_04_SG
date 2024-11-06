@@ -1,0 +1,4 @@
+SELECT id, dataWyjazdu, cel ,cena FROM wycieczki where dostepna =1;
+SELECT * FROM `wycieczki`
+LEFT JOIN zdjecia ON wycieczki.zdjecia_id = zdjecia_id;
+ALTER TABLE `wycieczki` ADD `liczbaDni` INT UNSIGNED NOT NULL AFTER `dataWyjazdu`;
